@@ -1,13 +1,17 @@
 {
   "files": {
-    "main.css": "/Practica-Ecommerce-React/static/css/main.e6c13ad2.css",
-    "main.js": "/Practica-Ecommerce-React/static/js/main.e66f2c44.js",
+    "main.css": "/Practica-Ecommerce-React/static/css/main.24efbf6c.css",
+    "main.js": "/Practica-Ecommerce-React/static/js/main.b158869f.js",
+    "static/media/logo.svg": "/Practica-Ecommerce-React/static/media/logo.4fe9c1e86cf9bf600f0c239f6a6e5317.svg",
     "index.html": "/Practica-Ecommerce-React/index.html",
-    "main.e6c13ad2.css.map": "/Practica-Ecommerce-React/static/css/main.e6c13ad2.css.map",
-    "main.e66f2c44.js.map": "/Practica-Ecommerce-React/static/js/main.e66f2c44.js.map"
+    "static/media/icon-cart.svg": "/Practica-Ecommerce-React/static/media/icon-cart.539ec608f50e707c94d583ec11acf99d.svg",
+    "static/media/icon-close.svg": "/Practica-Ecommerce-React/static/media/icon-close.c390448669f3a8a4c4b2ada2f9938959.svg",
+    "static/media/icon-menu.svg": "/Practica-Ecommerce-React/static/media/icon-menu.c6107d03f1edcf73523ebd8cbc50a443.svg",
+    "main.24efbf6c.css.map": "/Practica-Ecommerce-React/static/css/main.24efbf6c.css.map",
+    "main.b158869f.js.map": "/Practica-Ecommerce-React/static/js/main.b158869f.js.map"
   },
   "entrypoints": [
-    "static/css/main.e6c13ad2.css",
-    "static/js/main.e66f2c44.js"
+    "static/css/main.24efbf6c.css",
+    "static/js/main.b158869f.js"
   ]
 }
