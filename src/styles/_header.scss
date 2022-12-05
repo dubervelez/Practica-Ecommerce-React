@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    max-width: 1300px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+}
+.logo-menu{
+    margin-right: 10px;
+}
+.logo-sneakers{
+    margin-right: 40px;
+}
+.nav-menu{
+    height: 100vh;
+    width: 70%;
+    list-style: none;
+    position: fixed;
+    background-color: white;
+    top: 0;
+    left: -100%;
+    padding: 30px;
+    z-index: 100;
+}
+.nav-menu.activo{
+    left: 0;
+    transition: all 0.5s;
+}
+.logo-cerrar-menu:hover{
+    cursor: pointer;
+}
+.nav-ul{
+    list-style: none;
+    margin-top: 50px;
+    
+}
+.nav-ul__li{
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+
+.login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-carro{}
+.avatar{
+    width: 35px;
+    margin-left: 10px;
+}
