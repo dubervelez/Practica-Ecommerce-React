@@ -8,6 +8,7 @@
     align-items: flex-start;
     justify-content: center;
     padding: 15px;
+    max-width: 420px;
 }
 
 .descripcion-producto{
@@ -91,4 +92,25 @@ button > img{
     color: aliceblue;
     fill: antiquewhite;
     
+}
+
+@media only screen and (min-width: 900px){
+    .contenedor-eleccion{
+        display: flex;
+        align-items: center;
+    }
+    .resumen-compra{
+        width: 40%;
+    }
+    button{
+        width: 60%;
+        height: 40px;
+    }
+    .contenedor-precio{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .precio{
+           font-size: 25px;
+       }
 }

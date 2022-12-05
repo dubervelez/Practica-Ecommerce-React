@@ -39,10 +39,12 @@
 
 @media only screen and (min-width: 450px){
     .slider{
-        max-width: 320px;
+        max-width: 350px;
+        justify-content: flex-start;
+        margin: 0;
     }
     .slider img{
-        border-radius: 5px;
+        border-radius: 10px;
     }
     .img-producto{
         height: auto;
@@ -55,11 +57,11 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 20px 40px;
+        padding: 20px 0;
         margin: auto;
     }
     .btn-img{
-        width: 50px;
+        width: 70px;
         cursor: pointer;
     }
     .btn-img:hover{

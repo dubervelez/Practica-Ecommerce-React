@@ -1,1 +1,20 @@
 body{font-family: 'Kumbh Sans', sans-serif;}
+
+main{
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+@media  only screen and (max-width: 846px) {
+    main{
+        justify-content: center;
+        padding: 0;
+    }
+    
+}
