@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Practica-Ecommerce-React/static/css/main.e6c13ad2.css",
+    "main.js": "/Practica-Ecommerce-React/static/js/main.e66f2c44.js",
+    "index.html": "/Practica-Ecommerce-React/index.html",
+    "main.e6c13ad2.css.map": "/Practica-Ecommerce-React/static/css/main.e6c13ad2.css.map",
+    "main.e66f2c44.js.map": "/Practica-Ecommerce-React/static/js/main.e66f2c44.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.e66f2c44.js"
+  ]
+}
