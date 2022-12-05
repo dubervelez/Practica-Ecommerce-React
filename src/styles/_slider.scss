@@ -1,0 +1,72 @@
+.slider{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.btn-slider{
+    display: none;
+}
+.imagen-activa{
+    position: relative;
+    width: 100%;
+}
+.img-producto{
+    width: 100%;
+    height: 40vh;
+    object-fit: cover;
+}
+.btn-prev, .btn-next{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    display: grid;
+    place-items: center;
+}
+.btn-prev{
+    left: 15px;
+}
+.btn-next{
+    right: 15px;
+}
+
+
+@media only screen and (min-width: 450px){
+    .slider{
+        max-width: 320px;
+    }
+    .slider img{
+        border-radius: 5px;
+    }
+    .img-producto{
+        height: auto;
+    }
+    .btn-prev, .btn-next{
+        display: none;
+    }
+    .btn-slider{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 40px;
+        margin: auto;
+    }
+    .btn-img{
+        width: 50px;
+        cursor: pointer;
+    }
+    .btn-img:hover{
+        opacity: 0.8;
+    }
+    .btn-img.activo{
+        border: 2px solid hsl(26, 100%, 55%);
+        opacity: 0.88;
+    }
+}
