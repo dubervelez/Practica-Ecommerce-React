@@ -7,12 +7,12 @@
 }
 
 header{
-    max-width: 1300px;
+    max-width: 1000px;
     margin: auto;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    padding: 10px 5px;
+    padding: 15px;
 }
 
 nav{
@@ -20,10 +20,11 @@ nav{
     align-items: center;
 }
 .logo-menu{
-    margin-right: 10px;
+    margin-right: 20px;
+    cursor: pointer;
 }
 .logo-sneakers{
-    margin-right: 40px;
+    margin-right: 60px;
 }
 .nav-menu{
     height: 100vh;
@@ -53,6 +54,7 @@ nav{
     font-weight: 700;
     font-size: 18px;
     margin-bottom: 20px;
+    cursor: pointer;
 }
 
 
@@ -62,8 +64,67 @@ nav{
     justify-content: center;
 }
 
-.logo-carro{}
+.logo-carro{
+    cursor: pointer;
+}
 .avatar{
     width: 35px;
     margin-left: 10px;
+    cursor: pointer;
+}
+
+
+@media only screen and (min-width: 900px){
+    .logo-menu{
+        display: none;
+    }
+    header{
+        padding: 0 ;
+        height: 80px;
+        border-bottom: 1px solid hsl(220, 14%, 75%);;
+    }
+    nav{
+        height: 100%;
+    }
+    .nav-menu{
+        height: 100%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        left: 0;
+        padding: 0;
+    }
+    .nav-ul{
+        display: flex;
+        margin: 0;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+    .nav-ul__li{
+        font-weight: 400;
+        margin: 0;
+        margin-right: 30px;
+        height: 100%;
+        color: hsl(219, 9%, 45%);
+        display: grid;
+        place-items: center;
+
+    }
+    .nav-ul__li:hover{
+        color: black;
+        border-bottom: 3px solid hsl(26, 100%, 55%);
+    }
+    .logo-cerrar-menu{
+        display: none;
+    }
+    .avatar{
+        width: 50px;
+        border-radius: 50%;
+        margin-left: 30px;
+    }
+    .avatar:hover{
+        border: 2px solid hsl(26, 100%, 55%);
+    }
 }
