@@ -1,0 +1,90 @@
+.contenedor-cart{
+    width: 350px;
+    height: 180px;
+    position: absolute;
+    top: -20px;
+    right: 10px;
+    background-color: white;
+    z-index: 140;
+    box-shadow: 0px 2px 3px 0px hsl(219, 9%, 45%);
+    padding: 20px;
+    border-radius: 10px;
+    display: grid;
+    place-items: center;
+}
+.mensaje-vacio{
+    font-size: 15px;
+    color: hsl(219, 9%, 45%);
+    font-weight: 700;
+    height: 100px;
+    display: grid;
+    place-items: center;
+}
+.mensaje-vacio.activo{
+    display: none;
+}
+.contenedor-carro{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none
+}
+.contenedor-carro.activo{
+    display: flex;
+}
+.titulo-cart{
+    width: 100%;
+    font-size: 14px;
+    font-weight: 700;
+    color: hsl(220, 13%, 13%);
+    border-bottom: 1px solid hsl(219, 9%, 45%);
+    padding-bottom: 10px;
+}
+.cart-contenido{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.contenido-texto{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    margin: 20px 0;
+}
+.miniatura{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.descripcion-cart{
+    font-size: 15px;
+    color: hsl(219, 9%, 45%);
+}
+.descrip{
+    font-size: 15px;
+}
+.precio-cart{
+    font-weight: 400;
+}
+.valor-cart{
+    font-weight: 700;
+    margin-left: 5px;
+}
+.icon-delete{
+    justify-self: flex-end;
+    position: absolute;
+    right: 20px;
+    cursor: pointer;
+}
+
+#btn-cart{
+    width: 60%;
+    height: 15px;
+}

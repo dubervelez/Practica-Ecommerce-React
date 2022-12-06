@@ -1,0 +1,43 @@
+.container-modal{
+    display: none;
+}
+
+@media only screen and (min-width: 900px) {
+    .container-modal{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.575);
+        z-index: 110;
+    }
+    .modal{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .cerrar-modal{
+        width: 20px;
+        align-self: flex-end;
+        margin-bottom: 1px;
+        cursor: pointer;
+        background-color: rgba(240, 248, 255, 0.185);
+    }
+    .container-modal .slider{
+        max-width: 400px;
+        height: 500px;
+    }
+    .container-modal .btn-img{
+        width: 65px;
+        cursor: pointer;
+    }
+    .container-modal .btn-slider{
+        padding: 20px 30px;
+    }
+        
+}

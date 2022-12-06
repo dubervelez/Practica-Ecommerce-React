@@ -8,7 +8,7 @@ import logoCerrarMenu from "../images/icon-close.svg";
 import "../styles/_header.scss";
 import { useState } from "react";
 
-function Header() {
+function Header({ mostrarCompras, cantidad, alertm }) {
 
     const [menus, setMenu] = useState(false);
     function desplegarMenu() {
@@ -35,7 +35,8 @@ function Header() {
             </div>
         </nav>
         <div className="login">
-            <img className='logo-carro' src={carroCompras} alt="carro compras" />
+            <span className={`alerta ${alertm}`}>{cantidad}</span>
+            <img className='logo-carro' src={carroCompras} alt="carro compras" onClick={mostrarCompras}/>
             <img className='avatar' src={login} alt="avatar " />
         </div>
     </header>

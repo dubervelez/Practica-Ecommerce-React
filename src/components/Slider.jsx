@@ -13,40 +13,20 @@ import "../styles/_slider.scss"
 import {useState} from "react";
 
 
-function Slider() {
+function Slider({mostrarModal}) {
   
     const [producto, setProducto] = useState(producto1)
     const [btnactivo1, setbtnActivo1] = useState (true)
     const [btnactivo2, setbtnActivo2] = useState (false)
     const [btnactivo3, setbtnActivo3] = useState (false)
     const [btnactivo4, setbtnActivo4] = useState (false)
-    function next1() {
-        setProducto(producto1)
-        setbtnActivo1(true)
-        setbtnActivo2(false)
-        setbtnActivo3(false)
-        setbtnActivo4(false)
-    }
-    function next2() {
-        setProducto(producto2)
-        setbtnActivo1(false)
-        setbtnActivo2(true)
-        setbtnActivo3(false)
-        setbtnActivo4(false)
-    }
-    function next3() {
-        setProducto(producto3)
-        setbtnActivo1(false)
-        setbtnActivo2(false)
-        setbtnActivo3(true)
-        setbtnActivo4(false)
-    }
-    function next4() {
-        setProducto(producto4)
+    function next(productos, btn) {
+        setProducto(productos)
         setbtnActivo1(false)
         setbtnActivo2(false)
         setbtnActivo3(false)
-        setbtnActivo4(true)
+        setbtnActivo4(false)
+        btn(true)
     }
     
     const lista = [producto1, producto2, producto3, producto4];
@@ -70,13 +50,11 @@ function Slider() {
     }
 
 
-
-
     return (
 
     <section className='slider'>
         <div className="imagen-activa">
-            <img className='img-producto' src={producto} alt="imagen producto" />
+            <img className='img-producto' src={producto} alt="imagen producto" onClick={mostrarModal}/>
             <div className='btn-prev'>
                 <img  src={prev} alt="boton siguiente" onClick={prevmobile}/>
             </div>
@@ -85,10 +63,10 @@ function Slider() {
             </div>
         </div>
         <div className="btn-slider">
-            <img className={`btn-img ${btnactivo1 ? "activo": "" }`} src={btnImage1} alt="imagen miniatura producto"  onClick={next1} />
-            <img className={`btn-img ${btnactivo2 ? "activo": "" }`} src={btnImage2} alt="imagen miniatura producto" onClick={next2}/>
-            <img className={`btn-img ${btnactivo3 ? "activo": "" }`} src={btnImage3} alt="imagen miniatura producto" onClick={next3}/>
-            <img className={`btn-img ${btnactivo4 ? "activo": "" }`} src={btnImage4} alt="imagen miniatura producto" onClick={next4}/>
+            <img className={`btn-img ${btnactivo1 ? "activo": "" }`} src={btnImage1} alt="imagen miniatura producto"  onClick={()=>{next(producto1, setbtnActivo1)}} />
+            <img className={`btn-img ${btnactivo2 ? "activo": "" }`} src={btnImage2} alt="imagen miniatura producto" onClick={()=>{next(producto2, setbtnActivo2)}}/>
+            <img className={`btn-img ${btnactivo3 ? "activo": "" }`} src={btnImage3} alt="imagen miniatura producto" onClick={()=>{next(producto3, setbtnActivo3)}}/>
+            <img className={`btn-img ${btnactivo4 ? "activo": "" }`} src={btnImage4} alt="imagen miniatura producto" onClick={()=>{next(producto4, setbtnActivo4)}}/>
         </div>
     </section>
   )

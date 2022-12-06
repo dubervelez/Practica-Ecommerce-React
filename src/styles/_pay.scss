@@ -67,8 +67,9 @@
     padding: 15px 20px;
     font-size: 18px;
 }
-.quitar-producto,  .agregar-producto{
+.quitar-producto:hover,  .agregar-producto:hover{
     cursor: pointer;
+    opacity: 0.9;
 }
 .cantidad-producto{
     font-weight: 700;
@@ -86,12 +87,13 @@ button{
     border-radius: 8px;
     color: white;
 }
+button:hover{
+    opacity: 0.9;
+    cursor: pointer;
+}
 
 button > img{
     margin-right: 15px;
-    color: aliceblue;
-    fill: antiquewhite;
-    
 }
 
 @media only screen and (min-width: 900px){
@@ -112,5 +114,5 @@ button > img{
     }
     .precio{
            font-size: 25px;
-       }
+    }
 }
