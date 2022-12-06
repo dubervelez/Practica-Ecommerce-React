@@ -12,7 +12,7 @@ function Pay({ children, agregarProducto, eliminarProducto, cargarProducto }) {
             <span className='subtitulo'>Sneaker Company</span>
             <h1 className='titulo'>Fall Limited Edition Sneakers</h1>
             <p className='descripcion'>These low-profile sneakers are your perfect casual wear companion. Featuring a 
-                durable rubber outer sole, they’ll withstand everything the weather can offer.
+                durable rubber outer sole, theyll withstand everything the weather can offer.
             </p>
             <div className='contenedor-precio'>
                 <p className='precio'>$125.00 <span className='descuento' >50%</span></p>

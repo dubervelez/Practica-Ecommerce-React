@@ -7,13 +7,13 @@ import producto1 from "../images/image-product-1.jpg"
 import producto2 from "../images/image-product-2.jpg"
 import producto3 from "../images/image-product-3.jpg"
 import producto4 from "../images/image-product-4.jpg"
-import next from "../images/icon-next.svg"
+import nexticon from "../images/icon-next.svg"
 import prev from "../images/icon-previous.svg"
 import "../styles/_slider.scss"
 import {useState} from "react";
 
 
-function Slider({mostrarModal}) {
+function Slider({ mostrarModal }) {
   
     const [producto, setProducto] = useState(producto1)
     const [btnactivo1, setbtnActivo1] = useState (true)
@@ -59,7 +59,7 @@ function Slider({mostrarModal}) {
                 <img  src={prev} alt="boton siguiente" onClick={prevmobile}/>
             </div>
             <div className='btn-next'>
-                <img src={next} alt="boton retroceder" onClick={nextmobile} />  
+                <img src={nexticon} alt="boton retroceder" onClick={nextmobile} />  
             </div>
         </div>
         <div className="btn-slider">
